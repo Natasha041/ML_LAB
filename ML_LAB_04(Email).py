@@ -78,5 +78,20 @@ param_grid = {'criterion':['gini','entropy'],'max_features':['sqrt','log2'],
               
 grid = GridSearchCV(rf,param_grid=param_grid,cv=5,scoring='accuracy')              
              
-grid.fit(x_train,y_train)             
+grid.fit(x_train,y_train)     
+
+/******************************************************************************************/
+* Naive Bayes Model (Lines 25-35):
+
+Theory: The code implements a Multinomial Naive Bayes (MNB) classifier.
+MNB is a probabilistic classifier well-suited for text classification tasks. 
+It assumes features are independent given the class label (Spam or Ham).
+
+ * Random Forest Classifier (Lines 46-57):
+
+Theory: The code introduces a Random Forest Classifier (RFC) as an alternative model.
+RFC ensembles multiple decision trees, improving modelgeneralizability and robustness
+
+
+/******************************************************************************************/
               
